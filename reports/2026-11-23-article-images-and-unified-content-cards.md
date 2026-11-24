@@ -44,6 +44,8 @@
 - **Verified:** Homepage loaded all three article images at 1672×941.
 - **Verified:** Project and conversation fallbacks rendered their corresponding icons.
 - **Verified:** Browser console contained no errors or warnings; only the Eleventy live-reload connection message appeared.
+- **Verified:** Netlify production returned both generated image assets with the expected byte sizes and served the shared card markup on the homepage and all three section pages.
+- **Verified:** Production Playwright checks passed at 1440px and 390px with exact 16:9 media, zero horizontal overflow, and no console messages.
 
 ## 6. Problems Found and Resolved
 
@@ -60,7 +62,7 @@
 - **Verified:** Both substantive image-less articles now have topic-specific featured images and alt text.
 - **Verified:** Article, project, and conversation cards use one shared media implementation on homepage and section pages.
 - **Verified:** Responsive layout, fallbacks, build output, and browser behavior pass locally.
-- **Pending deployment phase:** Commit, push, and production verification will follow this reviewed implementation report.
+- **Verified:** Commit `f09298a` was pushed to `main`, Netlify deployed it, and the live site passed direct asset checks plus desktop/mobile browser verification.
 
 ## 9. Recommended Next Steps
 
