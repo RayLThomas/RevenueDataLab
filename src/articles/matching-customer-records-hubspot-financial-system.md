@@ -12,7 +12,7 @@ tags:
   - Data Reconciliation
   - AI
 image: /images/articles/matching-customer-records-hubspot-financial-system.png
-imageAlt: "A glass data-matching workspace connecting CRM companies to financial accounts with reviewed one-to-many relationships"
+imageAlt: "Two translucent record streams align through a glass review lens and emerge as preserved grouped accounts"
 ---
 
 I recently worked on a project that required matching customer records between HubSpot and a financial system. On paper, the task was straightforward. Export the customer records from both systems, identify which ones belonged together, and prepare the data for import.

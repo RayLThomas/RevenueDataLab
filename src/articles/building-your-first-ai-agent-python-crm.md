@@ -9,7 +9,7 @@ tags:
   - Tutorial
 slug: building-your-first-ai-agent-python-crm
 image: /images/articles/building-your-first-ai-agent-python-crm.png
-imageAlt: "A glass AI agent orchestrating CRM records, approved code tools, and pipeline analytics in a controlled loop"
+imageAlt: "A luminous glass permission aperture routes abstract CRM data through controlled capabilities into an organized response"
 ---
 
 I wanted to understand what makes an AI agent different from a normal prompt. Reading about agents helped, but building one made the distinction clearer. This project uses a small CSV of fictional CRM deals, two Python functions, and an OpenAI model. It isn't intended to replace HubSpot reporting or handle real customer data.
