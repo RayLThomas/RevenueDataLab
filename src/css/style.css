@@ -10,6 +10,7 @@ html {
   --blue: #3b82f6;
   --cyan: #06b6d4;
   --teal: #2dd4bf;
+  --teal-dark: #0f766e;
   --text: #f8fafc;
   --muted: #94a3b8;
   --border: #1f2937;
@@ -74,7 +75,8 @@ a:visited {
 }
 
 ::selection {
-  background: #dbd93a;
+  color: #fff;
+  background: var(--teal-dark);
 }
 
 .fadeIn {
@@ -204,7 +206,8 @@ ENTRIES (articles, projects, conversations)
 .articleBody pre {
   overflow-x: auto;
   padding: 1rem;
-  border-radius: .25rem;
+  border: 1px solid rgba(6, 182, 212, .25);
+  border-radius: .5rem;
 }
 
 .articleBody pre,
@@ -212,10 +215,12 @@ ENTRIES (articles, projects, conversations)
   font-size: 1rem;
 }
 
-.articleBody :not(pre) > code {
-  padding: .1em .35em;
-  background: rgba(255, 255, 255, .1);
-  border-radius: .2rem;
+:not(pre) > code {
+  padding: .12em .38em;
+  color: var(--cyan);
+  background: var(--surface-2);
+  border: 1px solid rgba(45, 212, 191, .25);
+  border-radius: .25rem;
 }
 
 .entryMeta,
@@ -381,6 +386,69 @@ CARDS (projects, articles, conversations)
 
 .card-img-top {
   border-radius: 7px 7px 0 0;
+}
+
+.articleCardMedia {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+  border-radius: 7px 7px 0 0;
+}
+
+.articleCardMedia > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .22s ease, opacity .22s ease;
+}
+
+.cardLink:hover .articleCardMedia > img,
+.cardLink:focus-visible .articleCardMedia > img {
+  opacity: .92;
+  transform: scale(1.02);
+}
+
+.articleCardFallback {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  background:
+    radial-gradient(circle at 28% 30%, rgba(6, 182, 212, .22), transparent 38%),
+    radial-gradient(circle at 72% 68%, rgba(45, 212, 191, .18), transparent 42%),
+    linear-gradient(135deg, var(--bg), var(--surface-2));
+}
+
+.articleCardFallback::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, .04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, .04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.articleCardFallbackIcon {
+  position: relative;
+  display: grid;
+  width: 4.25rem;
+  height: 4.25rem;
+  color: var(--cyan);
+  background: rgba(11, 18, 32, .78);
+  border: 1px solid rgba(45, 212, 191, .45);
+  border-radius: 1rem;
+  box-shadow: 0 0 32px rgba(6, 182, 212, .18);
+  place-items: center;
+}
+
+.articleCardFallbackIcon .icon {
+  width: 2.25rem;
+  height: 2.25rem;
 }
 
 .card-body {

@@ -15,7 +15,7 @@ Copy a starter from `docs/templates/` into the matching folder in `src/`, fill i
 | Content | Folder | Starter | Notes |
 | --- | --- | --- | --- |
 | Project | `src/projects/` | `docs/templates/project.md` | `featured: true` shows it on the homepage (max 3) |
-| Article | `src/articles/` | `docs/templates/article.md` | Optional `categories`, `tags`, `author`, `readingTime`; related articles share a category |
+| Article | `src/articles/` | `docs/templates/article.md` | Optional `categories`, `tags`, `author`, `readingTime`; related articles share a category; images follow `docs/ARTICLE-IMAGE-STYLE.md` |
 | Conversation | `src/conversations/` | `docs/templates/conversation.md` | `youtubeId` embeds the video via youtube-nocookie; related conversations share a topic |
 
 Files are Markdown; the file name becomes the URL (`src/articles/my-post.md` → `/articles/my-post/`). All entries use `title` and `date`, and listings are newest first.

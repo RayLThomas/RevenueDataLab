@@ -11,7 +11,7 @@ tags:
   - Applicant Tracking Systems
   - Interviewing
 image: /images/articles/advanced-ai-assisted-hiring.png
-imageAlt: "An AI-assisted hiring system connecting a candidate profile with role evidence, interviews, analytics, and a continuous feedback loop"
+imageAlt: "A glass AI hiring dashboard linking video and audio interviews to a candidate profile, competency radar, and performance analytics"
 ---
 
 All too often, a company needs a position filled and makes a bad decision on what role, duties, and skills to hire for. Much of this can be avoided and accomplished by one person leveraging AI instead of relying entirely on the usual process: talk to the future manager, talk to the team, ask what they need, and pull the most recent and relevant JD from the HR rep, etc.

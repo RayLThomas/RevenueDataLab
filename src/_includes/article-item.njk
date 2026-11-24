@@ -1,6 +1,15 @@
 <li class="col">
   <a href="{{ post.url }}" class="cardLink d-block h-100">
     <div class="card h-100">
+      <div class="articleCardMedia">
+        {% if post.data.image %}
+        <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt or '' }}" loading="lazy" decoding="async" />
+        {% else %}
+        <div class="articleCardFallback" aria-hidden="true">
+          <span class="articleCardFallbackIcon">{% icon "article" %}</span>
+        </div>
+        {% endif %}
+      </div>
       <div class="card-body">
         <div class="cardTop">
           <span class="cardIcon">{% icon "article" %}</span>

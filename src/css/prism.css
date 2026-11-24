@@ -1,0 +1,101 @@
+/* Revenue Data Lab Prism theme: navy surfaces with blue, cyan, and teal accents. */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: var(--text);
+  background: none;
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  line-height: 1.55;
+  text-align: left;
+  white-space: pre;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  tab-size: 2;
+  hyphens: none;
+}
+
+pre[class*="language-"] {
+  margin: 1.5rem 0;
+  background: var(--surface);
+  box-shadow: inset 3px 0 0 var(--teal-dark);
+}
+
+:not(pre) > code[class*="language-"] {
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--muted);
+}
+
+.token.punctuation {
+  color: #cbd5e1;
+}
+
+.token.namespace {
+  opacity: .8;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: var(--blue);
+}
+
+.token.boolean,
+.token.number {
+  color: var(--teal);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #5eead4;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: var(--cyan);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+  color: #60a5fa;
+}
+
+.token.keyword {
+  color: #22d3ee;
+  font-weight: 600;
+}
+
+.token.regex,
+.token.important {
+  color: var(--teal);
+}
+
+.token.important,
+.token.bold {
+  font-weight: 700;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}

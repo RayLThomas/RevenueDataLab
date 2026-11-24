@@ -18,9 +18,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('./src/images');
     eleventyConfig.addPassthroughCopy('./src/js');
     eleventyConfig.addPassthroughCopy('./src/robots.txt');
-    eleventyConfig.addPassthroughCopy({
-        'node_modules/prismjs/themes/prism-okaidia.css': 'css/prism.css'
-    });
 
     // Collections: newest first, drafts excluded
     const section = (glob) => (api) =>
