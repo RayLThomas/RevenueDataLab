@@ -40,6 +40,8 @@
 - **Verified:** Desktop and mobile layouts had zero horizontal overflow.
 - **Verified:** Browser console contained no errors or warnings; only the Eleventy live-reload connection message appeared.
 - **Verified:** Side-by-side screenshot review confirmed consistent atmosphere, glass material, gradients, lighting, and finish with distinct subject compositions.
+- **Verified:** Netlify served the corrected assets at the expected byte sizes with updated alternative text.
+- **Verified:** Production Playwright checks passed at 1440×1100 and 390×844 with exact 16:9 cards, zero horizontal overflow, and no console messages.
 
 ## 6. Problems Found and Resolved
 
@@ -56,7 +58,7 @@
 - **Verified:** Every non-test content item has compliant artwork; the only non-test items are the three substantive articles.
 - **Verified:** The two corrected images are distinct, article-specific, and visually consistent with the canonical hiring reference.
 - **Verified:** The permanent standard and enforcement checklist are stored in the repository.
-- **Pending deployment phase:** Commit, push, and production verification will follow this reviewed implementation report.
+- **Verified:** Commit `7ac05bd` was pushed to `main`, deployed by Netlify, and verified through direct asset checks plus desktop/mobile production browser testing.
 
 ## 9. Recommended Next Steps
 
