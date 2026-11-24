@@ -1,7 +1,10 @@
 <div class="col">
   <a href="{{ ep.url }}" class="cardLink d-block h-100">
     <div class="card h-100">
-      {% if ep.data.thumbnail %}<img src="{{ ep.data.thumbnail }}" class="card-img-top" alt="{{ ep.data.imageAlt or '' }}" loading="lazy" decoding="async" />{% endif %}
+      {% set cardImage = ep.data.thumbnail %}
+      {% set cardImageAlt = ep.data.imageAlt %}
+      {% set cardIconName = "conversation" %}
+      {% include "card-media.njk" %}
       <div class="card-body">
         <div class="cardTop">
           <span class="cardIcon">{% icon "conversation" %}</span>

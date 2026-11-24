@@ -1,7 +1,10 @@
 <div class="col">
   <a href="{{ project.url }}" class="cardLink d-block h-100">
     <div class="card h-100">
-      {% if project.data.image %}<img src="{{ project.data.image }}" class="card-img-top" alt="{{ project.data.imageAlt }}" loading="lazy" decoding="async" />{% endif %}
+      {% set cardImage = project.data.image %}
+      {% set cardImageAlt = project.data.imageAlt %}
+      {% set cardIconName = "project" %}
+      {% include "card-media.njk" %}
       <div class="card-body">
         <div class="cardTop">
           <span class="cardIcon">{% icon "project" %}</span>

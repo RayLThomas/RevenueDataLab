@@ -1,0 +1,9 @@
+<div class="cardMedia">
+  {% if cardImage %}
+  <img src="{{ cardImage }}" alt="{{ cardImageAlt or '' }}" loading="lazy" decoding="async" />
+  {% else %}
+  <div class="cardMediaFallback" aria-hidden="true">
+    <span class="cardMediaFallbackIcon">{% icon cardIconName %}</span>
+  </div>
+  {% endif %}
+</div>
